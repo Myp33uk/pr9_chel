@@ -31,16 +31,16 @@ namespace pr9_chel
         {
             if (int.TryParse(outNumber.Text, out int position) && position <= 7 && position > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
-                int.TryParse(outRoom.Text, out int room))
+                int.TryParse(outRoom.Text, out int flat))
             {
            
-                pochta[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, room);
+                pochta[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, flat);
                 matrix[position - 1, 0] = pochta[position - 1].Whom;
                 matrix[position - 1, 1] = pochta[position - 1].City;
                 matrix[position - 1, 2] = pochta[position - 1].Value;
                 matrix[position - 1, 3] = pochta[position - 1].Street;
                 matrix[position - 1, 4] = pochta[position - 1].House.ToString();
-                matrix[position - 1, 5] = pochta[position - 1].Room.ToString();
+                matrix[position - 1, 5] = pochta[position - 1].Flat.ToString();
                 dataGrid.ItemsSource = VisualArray.ToDataTable(matrix).DefaultView;
                 dataGrid.Columns[0].Header = "Кому";
                 dataGrid.Columns[1].Header = "Город";

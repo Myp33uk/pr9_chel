@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr9_chel"
         mc:Ignorable="d"
-        Title="pr9_chel" Height="625" Width="852" ResizeMode="CanMinimize">
+        Title="pr9_chel" Height="504" Width="404" ResizeMode="CanMinimize">
     <Grid RenderTransformOrigin="0.295,0.71">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="153" Margin="17,24,0,0" VerticalAlignment="Top" Width="784" IsReadOnly="True"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="153" Margin="17,24,0,0" VerticalAlignment="Top" Width="359" IsReadOnly="True"/>
         <GroupBox Header="Ввод данных о доставке" HorizontalAlignment="Left" Height="206" Margin="17,236,0,0" VerticalAlignment="Top" Width="358">
             <Grid>
                 <TextBox x:Name="outStreet" HorizontalAlignment="Left" Height="23" Margin="10,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>

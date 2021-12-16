@@ -9,20 +9,20 @@ namespace pr9_chel
 {
     struct Pochta
     {
-        public Pochta(string city, string whom, string value, string street, int house, int room)
+        public Pochta(string city, string whom, string value, string street, int house, int flat)
         {
             City = city;
             Whom = whom;
             Value = value;
             Street = street;
             House = house;
-            Room = room;
+            Flat = flat;
         }
         public string City { get; set; }
         public string Whom { get; set; }
         public string Value { get; set; }
         public string Street { get; set; }
         public int House { get; set; }
-        public int Room { get; set; }
+        public int Flat { get; set; }
     }
 }
