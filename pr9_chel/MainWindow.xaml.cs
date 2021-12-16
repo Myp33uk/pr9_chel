@@ -27,7 +27,7 @@ namespace pr9_chel
             InitializeComponent();
         }
 
-        private void Fill(object sender, RoutedEventArgs e)
+        private void Filal(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(outNumber.Text, out int number) && number <= 7 && number > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
