@@ -8,7 +8,7 @@ namespace pr9_chel
 
 {
     struct Pochta
-    {a
+    {
         public Pochta(string city, string whom, string value, string street, int house, int flat)
         {
             City = city;
