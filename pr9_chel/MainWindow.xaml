@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr9_chel"
         mc:Ignorable="d"
-        Title="pr9_chel" Height="625" Width="407" ResizeMode="CanMinimize">
+        Title="pr9_chel" Height="625" Width="852" ResizeMode="CanMinimize">
     <Grid RenderTransformOrigin="0.295,0.71">
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="153" Margin="17,24,0,0" VerticalAlignment="Top" Width="358" IsReadOnly="True"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="153" Margin="17,24,0,0" VerticalAlignment="Top" Width="784" IsReadOnly="True"/>
         <GroupBox Header="Ввод данных о доставке" HorizontalAlignment="Left" Height="206" Margin="17,236,0,0" VerticalAlignment="Top" Width="358">
             <Grid>
                 <TextBox x:Name="outStreet" HorizontalAlignment="Left" Height="23" Margin="10,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
@@ -17,7 +17,7 @@
                 <Label Content="№ дома" HorizontalAlignment="Left" Margin="117,31,0,0" VerticalAlignment="Top"/>
                 <Label Content="№ квартиры" HorizontalAlignment="Left" Margin="220,31,0,0" VerticalAlignment="Top"/>
                 <Button Content="Заполнить" HorizontalAlignment="Left" Margin="115,153,0,0" VerticalAlignment="Top" Width="100" Click="FillTable"/>
-                <TextBox x:Name="outPosition" HorizontalAlignment="Left" Height="23" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="outPosition_TextChanged"/>
+                <TextBox x:Name="outNumber" HorizontalAlignment="Left" Height="23" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="outPosition_TextChanged"/>
                 <Label Content="номер строчки" HorizontalAlignment="Left" Margin="117,3,0,0" VerticalAlignment="Top"/>
                 <Button Content="Удалить" HorizontalAlignment="Left" Margin="220,153,0,0" VerticalAlignment="Top" Width="100" Click="DeleteLine"/>
                 <TextBox x:Name="outWhom" HorizontalAlignment="Left" Height="23" Margin="12,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
@@ -30,7 +30,7 @@
         </GroupBox>
         <Button Content="О программе" HorizontalAlignment="Left" Margin="17,442,0,0" VerticalAlignment="Top" Width="100" Click="Info"/>
         <Button Content="Выход" HorizontalAlignment="Left" Margin="275,442,0,0" VerticalAlignment="Top" Width="100" Click="Exit"/>
-        <TextBox x:Name="searchStreet" HorizontalAlignment="Left" Height="23" Margin="64,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="searchStreet_TextChanged"/>
+        <TextBox x:Name="searchCity" HorizontalAlignment="Left" Height="23" Margin="64,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="searchStreet_TextChanged"/>
         <Label Content="город" HorizontalAlignment="Left" Margin="17,207,0,0" VerticalAlignment="Top"/>
         <Button Content="Найти" HorizontalAlignment="Left" Margin="169,210,0,0" VerticalAlignment="Top" Width="100" Click="Search" Height="23"/>
         <TextBox x:Name="outPackage" HorizontalAlignment="Left" Height="23" Margin="276,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsReadOnly="True"/>

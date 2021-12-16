@@ -20,8 +20,8 @@ namespace pr9_chel
     /// </summary>
     public partial class MainWindow : Window
     {
-        Pochta[] pochta = new Pochta[10];
-        string[,] matrix = new string[10, 6];
+        Pochta[] pochta = new Pochta[7];
+        string[,] matrix = new string[7, 6];
         public MainWindow()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace pr9_chel
 
         private void FillTable(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(outPosition.Text, out int position) && position <= 10 && position > 0 && outCity.Text != string.Empty &&
+            if (int.TryParse(outNumber.Text, out int position) && position <= 7 && position > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
                 int.TryParse(outRoom.Text, out int room))
             {
@@ -54,7 +54,7 @@ namespace pr9_chel
 
         private void DeleteLine(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(outPosition.Text, out int position) && position > 0 && position <= 10)
+            if (int.TryParse(outNumber.Text, out int position) && position > 0 && position <= 7)
             {
                 pochta[position - 1] = new Pochta();
                 for (int i = 0; i <= 5; i++)
@@ -75,15 +75,15 @@ namespace pr9_chel
         private void Search(object sender, RoutedEventArgs e)
         {
             int package = 0;
-            if (searchStreet.Text != string.Empty)
+            if (searchCity.Text != string.Empty)
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 7; i++)
                 {
                     if (matrix[i, 2] == null)
                     {
                         continue;
                     }
-                    if (matrix[i, 2] == searchStreet.Text)
+                    if (matrix[i, 2] == searchCity.Text)
                     {
                         package++;
                     }
