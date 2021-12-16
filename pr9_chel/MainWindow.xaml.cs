@@ -31,7 +31,7 @@ namespace pr9_chel
         {
             if (int.TryParse(outNumber.Text, out int position) && position <= 7 && position > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
-                int.TryParse(outRoom.Text, out int flat))
+                int.TryParse(outFlat.Text, out int flat))
             {
            
                 pochta[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, flat);
@@ -104,7 +104,7 @@ namespace pr9_chel
             outValue.Clear();
             outStreet.Clear();
             outHouse.Clear();
-            outRoom.Clear();
+            outFlat.Clear();
         }
 
         private void Info(object sender, RoutedEventArgs e)

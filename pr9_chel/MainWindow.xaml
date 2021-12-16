@@ -12,7 +12,7 @@
             <Grid>
                 <TextBox x:Name="outStreet" HorizontalAlignment="Left" Height="23" Margin="10,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
                 <TextBox x:Name="outHouse" HorizontalAlignment="Left" Height="23" Margin="115,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outRoom" HorizontalAlignment="Left" Height="23" Margin="220,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="outFlat" HorizontalAlignment="Left" Height="23" Margin="220,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
                 <Label Content="Улица" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
                 <Label Content="№ дома" HorizontalAlignment="Left" Margin="117,31,0,0" VerticalAlignment="Top"/>
                 <Label Content="№ квартиры" HorizontalAlignment="Left" Margin="220,31,0,0" VerticalAlignment="Top"/>
