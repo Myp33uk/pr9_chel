@@ -20,7 +20,7 @@ namespace pr9_chel
     /// </summary>
     public partial class MainWindow : Window
     {
-        Pochta[] student = new Pochta[10];
+        Pochta[] pochta = new Pochta[10];
         string[,] matrix = new string[10, 6];
         public MainWindow()
         {
@@ -34,13 +34,13 @@ namespace pr9_chel
                 int.TryParse(outRoom.Text, out int room))
             {
            
-                student[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, room);
-                matrix[position - 1, 0] = student[position - 1].Whom;
-                matrix[position - 1, 1] = student[position - 1].City;
-                matrix[position - 1, 2] = student[position - 1].Value;
-                matrix[position - 1, 3] = student[position - 1].Street;
-                matrix[position - 1, 4] = student[position - 1].House.ToString();
-                matrix[position - 1, 5] = student[position - 1].Room.ToString();
+                pochta[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, room);
+                matrix[position - 1, 0] = pochta[position - 1].Whom;
+                matrix[position - 1, 1] = pochta[position - 1].City;
+                matrix[position - 1, 2] = pochta[position - 1].Value;
+                matrix[position - 1, 3] = pochta[position - 1].Street;
+                matrix[position - 1, 4] = pochta[position - 1].House.ToString();
+                matrix[position - 1, 5] = pochta[position - 1].Room.ToString();
                 dataGrid.ItemsSource = VisualArray.ToDataTable(matrix).DefaultView;
                 dataGrid.Columns[0].Header = "Кому";
                 dataGrid.Columns[1].Header = "Город";
@@ -56,7 +56,7 @@ namespace pr9_chel
         {
             if (int.TryParse(outPosition.Text, out int position) && position > 0 && position <= 10)
             {
-                student[position - 1] = new Pochta();
+                pochta[position - 1] = new Pochta();
                 for (int i = 0; i <= 5; i++)
                 {
                     matrix[position - 1, i] = string.Empty;

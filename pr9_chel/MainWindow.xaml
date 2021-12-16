@@ -5,27 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pr9_chel"
         mc:Ignorable="d"
-        Title="pr9_chel" Height="506" Width="407" ResizeMode="CanMinimize">
+        Title="pr9_chel" Height="625" Width="407" ResizeMode="CanMinimize">
     <Grid RenderTransformOrigin="0.295,0.71">
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="153" Margin="17,24,0,0" VerticalAlignment="Top" Width="358" IsReadOnly="True"/>
         <GroupBox Header="Ввод данных о доставке" HorizontalAlignment="Left" Height="206" Margin="17,236,0,0" VerticalAlignment="Top" Width="358">
             <Grid>
-                <TextBox x:Name="outWhom" HorizontalAlignment="Left" Height="23" Margin="10,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outCity" HorizontalAlignment="Left" Height="23" Margin="115,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outValue" HorizontalAlignment="Left" Height="23" Margin="220,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outStreet" HorizontalAlignment="Left" Height="23" Margin="10,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outHouse" HorizontalAlignment="Left" Height="23" Margin="115,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <TextBox x:Name="outRoom" HorizontalAlignment="Left" Height="23" Margin="220,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-                <Label Content="Кому" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top"/>
-                <Label Content="Город" HorizontalAlignment="Left" Margin="117,27,0,0" VerticalAlignment="Top"/>
-                <Label Content="Ценность" HorizontalAlignment="Left" Margin="220,26,0,0" VerticalAlignment="Top"/>
-                <Label Content="Улица" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top"/>
-                <Label Content="№ дома" HorizontalAlignment="Left" Margin="117,86,0,0" VerticalAlignment="Top"/>
-                <Label Content="№ квартиры" HorizontalAlignment="Left" Margin="220,86,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="outStreet" HorizontalAlignment="Left" Height="23" Margin="10,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="outHouse" HorizontalAlignment="Left" Height="23" Margin="115,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="outRoom" HorizontalAlignment="Left" Height="23" Margin="220,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <Label Content="Улица" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top"/>
+                <Label Content="№ дома" HorizontalAlignment="Left" Margin="117,31,0,0" VerticalAlignment="Top"/>
+                <Label Content="№ квартиры" HorizontalAlignment="Left" Margin="220,31,0,0" VerticalAlignment="Top"/>
                 <Button Content="Заполнить" HorizontalAlignment="Left" Margin="115,153,0,0" VerticalAlignment="Top" Width="100" Click="FillTable"/>
                 <TextBox x:Name="outPosition" HorizontalAlignment="Left" Height="23" Margin="10,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" TextChanged="outPosition_TextChanged"/>
                 <Label Content="номер строчки" HorizontalAlignment="Left" Margin="117,3,0,0" VerticalAlignment="Top"/>
                 <Button Content="Удалить" HorizontalAlignment="Left" Margin="220,153,0,0" VerticalAlignment="Top" Width="100" Click="DeleteLine"/>
+                <TextBox x:Name="outWhom" HorizontalAlignment="Left" Height="23" Margin="12,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="outCity" HorizontalAlignment="Left" Height="23" Margin="117,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <TextBox x:Name="outValue" HorizontalAlignment="Left" Height="23" Margin="222,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+                <Label Content="Кому" HorizontalAlignment="Left" Margin="12,88,0,0" VerticalAlignment="Top"/>
+                <Label Content="Город" HorizontalAlignment="Left" Margin="119,88,0,0" VerticalAlignment="Top"/>
+                <Label Content="Ценность" HorizontalAlignment="Left" Margin="222,87,0,0" VerticalAlignment="Top"/>
             </Grid>
         </GroupBox>
         <Button Content="О программе" HorizontalAlignment="Left" Margin="17,442,0,0" VerticalAlignment="Top" Width="100" Click="Info"/>
@@ -35,6 +35,6 @@
         <Button Content="Найти" HorizontalAlignment="Left" Margin="169,210,0,0" VerticalAlignment="Top" Width="100" Click="Search" Height="23"/>
         <TextBox x:Name="outPackage" HorizontalAlignment="Left" Height="23" Margin="276,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" IsReadOnly="True"/>
         <Label Content="отправлено" HorizontalAlignment="Left" Margin="301,182,0,0" VerticalAlignment="Top" Height="28"/>
-        <Label Content="узнать сколько посылок отправлено в город" HorizontalAlignment="Left" Margin="17,182,0,0" VerticalAlignment="Top" Width="259" Height="28"/>
+        <Label Content="узнать сколько посылок отправлено в город" HorizontalAlignment="Left" Margin="17,182,0,0" VerticalAlignment="Top" Width="259" Height="31"/>
     </Grid>
 </Window>
