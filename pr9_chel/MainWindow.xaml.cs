@@ -29,18 +29,18 @@ namespace pr9_chel
 
         private void Fill(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(outNumber.Text, out int position) && position <= 7 && position > 0 && outCity.Text != string.Empty &&
+            if (int.TryParse(outNumber.Text, out int number) && number <= 7 && number > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
                 int.TryParse(outFlat.Text, out int flat))
             {
            
-                pochta[position - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, flat);
-                matrix[position - 1, 0] = pochta[position - 1].Whom;
-                matrix[position - 1, 1] = pochta[position - 1].City;
-                matrix[position - 1, 2] = pochta[position - 1].Value;
-                matrix[position - 1, 3] = pochta[position - 1].Street;
-                matrix[position - 1, 4] = pochta[position - 1].House.ToString();
-                matrix[position - 1, 5] = pochta[position - 1].Flat.ToString();
+                pochta[number - 1] = new Pochta(outCity.Text, outWhom.Text, outValue.Text, outStreet.Text, house, flat);
+                matrix[number - 1, 0] = pochta[number - 1].Whom;
+                matrix[number - 1, 1] = pochta[number - 1].City;
+                matrix[number - 1, 2] = pochta[number - 1].Value;
+                matrix[number - 1, 3] = pochta[number - 1].Street;
+                matrix[number - 1, 4] = pochta[number - 1].House.ToString();
+                matrix[number - 1, 5] = pochta[number - 1].Flat.ToString();
                 dataGrid.ItemsSource = VisualArray.ToDataTable(matrix).DefaultView;
                 dataGrid.Columns[0].Header = "Кому";
                 dataGrid.Columns[1].Header = "Город";
@@ -54,12 +54,12 @@ namespace pr9_chel
 
         private void Delete(object sender, RoutedEventArgs e)
         {
-            if (int.TryParse(outNumber.Text, out int position) && position > 0 && position <= 7)
+            if (int.TryParse(outNumber.Text, out int number) && number > 0 && number <= 7)
             {
-                pochta[position - 1] = new Pochta();
+                pochta[number - 1] = new Pochta();
                 for (int i = 0; i <= 5; i++)
                 {
-                    matrix[position - 1, i] = string.Empty;
+                    matrix[number - 1, i] = string.Empty;
                 }
                 dataGrid.ItemsSource = VisualArray.ToDataTable(matrix).DefaultView;
                 dataGrid.Columns[0].Header = "Кому";
