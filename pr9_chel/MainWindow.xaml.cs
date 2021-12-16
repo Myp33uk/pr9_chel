@@ -27,7 +27,7 @@ namespace pr9_chel
             InitializeComponent();
         }
 
-        private void FillTable(object sender, RoutedEventArgs e)
+        private void Fill(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(outNumber.Text, out int position) && position <= 7 && position > 0 && outCity.Text != string.Empty &&
                 outWhom.Text != string.Empty && outValue.Text != string.Empty && outStreet.Text != string.Empty && int.TryParse(outHouse.Text, out int house) &&
@@ -52,7 +52,7 @@ namespace pr9_chel
             outPackage.Clear();
         }
 
-        private void DeleteLine(object sender, RoutedEventArgs e)
+        private void Delete(object sender, RoutedEventArgs e)
         {
             if (int.TryParse(outNumber.Text, out int position) && position > 0 && position <= 7)
             {
@@ -79,11 +79,11 @@ namespace pr9_chel
             {
                 for (int i = 0; i < 7; i++)
                 {
-                    if (matrix[i, 2] == null)
+                    if (matrix[i, 1] == null)
                     {
                         continue;
                     }
-                    if (matrix[i, 2] == searchCity.Text)
+                    if (matrix[i, 1] == searchCity.Text)
                     {
                         package++;
                     }
@@ -92,12 +92,12 @@ namespace pr9_chel
             }
         }
 
-        private void searchStreet_TextChanged(object sender, TextChangedEventArgs e)
+        private void SearchCities(object sender, TextChangedEventArgs e)
         {
             outPackage.Clear();
         }
 
-        private void outPosition_TextChanged(object sender, TextChangedEventArgs e)
+        private void OutNumbers(object sender, TextChangedEventArgs e)
         {
             outWhom.Clear();
             outCity.Clear();
